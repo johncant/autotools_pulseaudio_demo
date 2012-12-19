@@ -20,17 +20,17 @@ ChangeLog # I guess you'd create this from `git log` if the project got serious
 README.md # This file
 
 # Code
-src/auto\_step.cc
+src/auto_step.cc
 </pre>
-<p>To regenerate the ./configure script after changing one of the Makefile.am(s) or configure.ac, execute `./reconf`. The project should now be ready for use (i.e. build with `./configure` then `make`)</p>
+<p>To regenerate the ./configure script and the rest of the build stuff after changing one of the Makefile.am(s) or configure.ac, execute `./reconf`. The project should now be ready for use (i.e. build with `./configure` then `make`)</p>
 
 
 <h2>Demo for pulseaudio simple API</h2>
 
-<p>pa\_simple = connection to pulseaudio server.</p>
+<p>pa_simple = connection to pulseaudio server.</p>
 
-<p>PA\_SAMPLE\_S16NE = Flag which makes the server accept an array of signed 16 bit integers. NE = native endian, so you don't need to worry about endianness (fine if you only need local sound)</p>
+<p>PA_SAMPLE_S16NE = Flag which makes the server accept an array of signed 16 bit integers. NE = native endian, so you don't need to worry about endianness (fine if you only need local sound)</p>
 
-<p>The rate of 44100Hz literally means "play a sample 41000 times a second."</p>
+<p>The rate of 44100Hz literally means "Play a sample every 1/44100th of a second."</p>
 
-<p>Take a look in src/auto\_step.cc . It plays a 2 second long sine wave at 440 Hz.</p>
+<p>Take a look in src/auto_step.cc . It plays a 2 second long sine wave at 440 Hz.</p>
